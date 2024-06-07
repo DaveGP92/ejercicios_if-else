@@ -3,7 +3,10 @@
 edad = int(input("¿Qué edad tienes?: \n"))
 
 if edad < 4:
-    print(f"El cliente tiene {edad} años. Puede entrar gratis")
+    print(f"El cliente tiene {edad} años. Puede entrar gratis.")
 
 elif edad >= 4 and edad <=18:
-    print("El cliente debe pagar 5 mil pesos")
+    print(f"El cliente tiene {edad} años, debe pagar 5 mil pesos.")
+
+else:
+    print(f"El cliente tiene {edad}, debe pagar 10 mil pesos.")
