@@ -2,6 +2,10 @@
 
 nombre = input("¿Cuál es tu nombre?\n").lower()
 sexo = input("¿Cuál es tu sexo? (m) Masculino o (f) femenino\n").lower()
+
+while sexo not in ["m", "f"]:
+    print("Sexo no válido. Por favor, ingrese un valor válido.")
+    sexo = input("¿Cuál es tu sexo? (m) Masculino o (f) femenino\n").lower()
         
 if sexo == "f" and nombre < "m" or sexo == "m" and nombre >= "n":
     
