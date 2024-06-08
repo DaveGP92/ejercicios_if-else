@@ -2,3 +2,13 @@
 
 nombre = input("¿Cuál es tu nombre?\n").lower()
 sexo = input("¿Cuál es tu sexo? (m) Masculino o (f) femenino\n").lower()
+        
+if sexo == "f" and nombre < "m" or sexo == "m" and nombre >= "n":
+    
+    print(f"Te llamas {nombre.capitalize()} y perteneces al grupo A.")
+
+elif sexo == "f" and nombre >= "m" or sexo == "m" and nombre < "n":
+    print(f"Te llamas {nombre.capitalize()} y perteneces al grupo B.")
+
+else:
+    print("Sexo no válido")
