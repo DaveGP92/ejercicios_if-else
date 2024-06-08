@@ -27,6 +27,29 @@ if eleccion_pizza == 'v':
     else:
         print("Entrada no válida")
 
+elif eleccion_pizza == 'nv':
+    eleccion_ingrediente = input(("Elije si quieres la hamburguesa con peperoni (pe), jamón (j) o salmón (s)\n")).lower()
+    
+    if eleccion_ingrediente == "pe":
+        pe = "peperoni"
+        print(f"Elegiste una pizza No vegetariana con {pe} como ingrediente agregado.")
+        print(f"Tu hamburguesa contiene los siguientes elementos: Mozarella, tomate y el ingrediente añadido: {pe}")
+    
+    elif eleccion_ingrediente == "j":
+        j = "jamón"
+        print(f"Elegiste una pizza No vegetariana con {j} como ingrediente agregado.")
+        print(f"Tu hamburguesa contiene los siguientes elementos: Mozarella, tomate y el ingrediente añadido: {j}")
+    
+    elif eleccion_ingrediente == "s":
+        s = "salmón"
+        print(f"Elegiste una pizza No vegetariana con {s} como ingrediente agregado.")
+        print(f"Tu hamburguesa contiene los siguientes elementos: Mozarella, tomate y el ingrediente añadido: {s}")
+    
+    else:
+        print("Entrada no válida")
+
+else:
+    print("Opción no válida.")
 
 
 
